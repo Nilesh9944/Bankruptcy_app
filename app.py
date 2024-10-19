@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-with open('xgboost_model1.pkl', 'rb') as f:
+with open('xgb_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Set up the Streamlit app
