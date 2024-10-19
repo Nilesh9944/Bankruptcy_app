@@ -3,9 +3,10 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-with open('xgb_model.pkl', 'rb') as f:
-    model = pickle.load(f)
-
+#with open('xgb_model.pkl', 'rb') as f:
+#    model = pickle.load(f)
+load= open('xgb_model.pkl', 'rb')
+model = pickle.load(load)
 # Set up the Streamlit app
 st.title("Bankruptcy Prediction Model")
 
